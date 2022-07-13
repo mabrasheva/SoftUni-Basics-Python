@@ -13,7 +13,7 @@ while word != "End of words":
             or word[0] == "O" or word[0] == "U" or word[0] == "Y":
         sum_letters *= len(word)
     else:
-        sum_letters = sum_letters / len(word)
+        sum_letters = int(sum_letters / len(word))
 
     if max_sum_letters <= sum_letters:
         max_sum_letters = sum_letters
